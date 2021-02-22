@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C3C84C3D-BDBA-310F-B9AC-633887E54134}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>tutorial09_vbo_indexing</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\githubRepo\NativeProjects\oglTest\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tutorial09_vbo_indexing.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tutorial09_vbo_indexing</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\githubRepo\NativeProjects\oglTest\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tutorial09_vbo_indexing.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tutorial09_vbo_indexing</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\githubRepo\NativeProjects\oglTest\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tutorial09_vbo_indexing.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tutorial09_vbo_indexing</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\githubRepo\NativeProjects\oglTest\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tutorial09_vbo_indexing.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tutorial09_vbo_indexing</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\SIMO1801\Desktop\ogl-master\external\AntTweakBar-1.16\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glfw-3.1.2\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glm-0.9.7.1;C:\Users\SIMO1801\Desktop\ogl-master\external\glew-1.13.0\include;C:\Users\SIMO1801\Desktop\ogl-master\external\assimp-3.0.1270\include;C:\Users\SIMO1801\Desktop\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\SIMO1801\Desktop\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\SIMO1801\Desktop\ogl-master\external\AntTweakBar-1.16\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glfw-3.1.2\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glm-0.9.7.1;C:\Users\SIMO1801\Desktop\ogl-master\external\glew-1.13.0\include;C:\Users\SIMO1801\Desktop\ogl-master\external\assimp-3.0.1270\include;C:\Users\SIMO1801\Desktop\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\SIMO1801\Desktop\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\SIMO1801\Desktop\ogl-master\external\AntTweakBar-1.16\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glfw-3.1.2\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glm-0.9.7.1;C:\Users\SIMO1801\Desktop\ogl-master\external\glew-1.13.0\include;C:\Users\SIMO1801\Desktop\ogl-master\external\assimp-3.0.1270\include;C:\Users\SIMO1801\Desktop\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\SIMO1801\Desktop\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\bin\cmake.exe -E copy D:/githubRepo/NativeProjects/oglTest/$(Configuration)/tutorial09_vbo_indexing.exe C:/Users/SIMO1801/Desktop/ogl-master/tutorial09_vbo_indexing/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;external\glfw-3.1.2\src\Debug\glfw3.lib;external\Debug\GLEW_1130.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/githubRepo/NativeProjects/oglTest/Debug/tutorial09_vbo_indexing.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/githubRepo/NativeProjects/oglTest/Debug/tutorial09_vbo_indexing.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\SIMO1801\Desktop\ogl-master\external\AntTweakBar-1.16\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glfw-3.1.2\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glm-0.9.7.1;C:\Users\SIMO1801\Desktop\ogl-master\external\glew-1.13.0\include;C:\Users\SIMO1801\Desktop\ogl-master\external\assimp-3.0.1270\include;C:\Users\SIMO1801\Desktop\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\SIMO1801\Desktop\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\SIMO1801\Desktop\ogl-master\external\AntTweakBar-1.16\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glfw-3.1.2\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glm-0.9.7.1;C:\Users\SIMO1801\Desktop\ogl-master\external\glew-1.13.0\include;C:\Users\SIMO1801\Desktop\ogl-master\external\assimp-3.0.1270\include;C:\Users\SIMO1801\Desktop\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\SIMO1801\Desktop\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\SIMO1801\Desktop\ogl-master\external\AntTweakBar-1.16\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glfw-3.1.2\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glm-0.9.7.1;C:\Users\SIMO1801\Desktop\ogl-master\external\glew-1.13.0\include;C:\Users\SIMO1801\Desktop\ogl-master\external\assimp-3.0.1270\include;C:\Users\SIMO1801\Desktop\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\SIMO1801\Desktop\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\bin\cmake.exe -E copy D:/githubRepo/NativeProjects/oglTest/$(Configuration)/tutorial09_vbo_indexing.exe C:/Users/SIMO1801/Desktop/ogl-master/tutorial09_vbo_indexing/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;external\glfw-3.1.2\src\Release\glfw3.lib;external\Release\GLEW_1130.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/githubRepo/NativeProjects/oglTest/Release/tutorial09_vbo_indexing.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/githubRepo/NativeProjects/oglTest/Release/tutorial09_vbo_indexing.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\SIMO1801\Desktop\ogl-master\external\AntTweakBar-1.16\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glfw-3.1.2\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glm-0.9.7.1;C:\Users\SIMO1801\Desktop\ogl-master\external\glew-1.13.0\include;C:\Users\SIMO1801\Desktop\ogl-master\external\assimp-3.0.1270\include;C:\Users\SIMO1801\Desktop\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\SIMO1801\Desktop\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\SIMO1801\Desktop\ogl-master\external\AntTweakBar-1.16\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glfw-3.1.2\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glm-0.9.7.1;C:\Users\SIMO1801\Desktop\ogl-master\external\glew-1.13.0\include;C:\Users\SIMO1801\Desktop\ogl-master\external\assimp-3.0.1270\include;C:\Users\SIMO1801\Desktop\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\SIMO1801\Desktop\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\SIMO1801\Desktop\ogl-master\external\AntTweakBar-1.16\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glfw-3.1.2\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glm-0.9.7.1;C:\Users\SIMO1801\Desktop\ogl-master\external\glew-1.13.0\include;C:\Users\SIMO1801\Desktop\ogl-master\external\assimp-3.0.1270\include;C:\Users\SIMO1801\Desktop\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\SIMO1801\Desktop\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\bin\cmake.exe -E copy D:/githubRepo/NativeProjects/oglTest/$(Configuration)/tutorial09_vbo_indexing.exe C:/Users/SIMO1801/Desktop/ogl-master/tutorial09_vbo_indexing/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;external\glfw-3.1.2\src\MinSizeRel\glfw3.lib;external\MinSizeRel\GLEW_1130.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/githubRepo/NativeProjects/oglTest/MinSizeRel/tutorial09_vbo_indexing.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/githubRepo/NativeProjects/oglTest/MinSizeRel/tutorial09_vbo_indexing.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\SIMO1801\Desktop\ogl-master\external\AntTweakBar-1.16\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glfw-3.1.2\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glm-0.9.7.1;C:\Users\SIMO1801\Desktop\ogl-master\external\glew-1.13.0\include;C:\Users\SIMO1801\Desktop\ogl-master\external\assimp-3.0.1270\include;C:\Users\SIMO1801\Desktop\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\SIMO1801\Desktop\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\SIMO1801\Desktop\ogl-master\external\AntTweakBar-1.16\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glfw-3.1.2\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glm-0.9.7.1;C:\Users\SIMO1801\Desktop\ogl-master\external\glew-1.13.0\include;C:\Users\SIMO1801\Desktop\ogl-master\external\assimp-3.0.1270\include;C:\Users\SIMO1801\Desktop\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\SIMO1801\Desktop\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\SIMO1801\Desktop\ogl-master\external\AntTweakBar-1.16\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glfw-3.1.2\include;C:\Users\SIMO1801\Desktop\ogl-master\external\glm-0.9.7.1;C:\Users\SIMO1801\Desktop\ogl-master\external\glew-1.13.0\include;C:\Users\SIMO1801\Desktop\ogl-master\external\assimp-3.0.1270\include;C:\Users\SIMO1801\Desktop\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\SIMO1801\Desktop\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\bin\cmake.exe -E copy D:/githubRepo/NativeProjects/oglTest/$(Configuration)/tutorial09_vbo_indexing.exe C:/Users/SIMO1801/Desktop/ogl-master/tutorial09_vbo_indexing/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;external\glfw-3.1.2\src\RelWithDebInfo\glfw3.lib;external\RelWithDebInfo\GLEW_1130.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/githubRepo/NativeProjects/oglTest/RelWithDebInfo/tutorial09_vbo_indexing.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/githubRepo/NativeProjects/oglTest/RelWithDebInfo/tutorial09_vbo_indexing.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\SIMO1801\Desktop\ogl-master\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/SIMO1801/Desktop/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\bin\cmake.exe -SC:/Users/SIMO1801/Desktop/ogl-master -BD:/githubRepo/NativeProjects/oglTest --check-stamp-file D:/githubRepo/NativeProjects/oglTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCCompilerABI.c;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeSystem.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\FindOpenGL.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeCCompiler.cmake;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\githubRepo\NativeProjects\oglTest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/SIMO1801/Desktop/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\bin\cmake.exe -SC:/Users/SIMO1801/Desktop/ogl-master -BD:/githubRepo/NativeProjects/oglTest --check-stamp-file D:/githubRepo/NativeProjects/oglTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCCompilerABI.c;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeSystem.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\FindOpenGL.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeCCompiler.cmake;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\githubRepo\NativeProjects\oglTest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/SIMO1801/Desktop/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\bin\cmake.exe -SC:/Users/SIMO1801/Desktop/ogl-master -BD:/githubRepo/NativeProjects/oglTest --check-stamp-file D:/githubRepo/NativeProjects/oglTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCCompilerABI.c;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeSystem.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\FindOpenGL.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeCCompiler.cmake;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\githubRepo\NativeProjects\oglTest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/SIMO1801/Desktop/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\bin\cmake.exe -SC:/Users/SIMO1801/Desktop/ogl-master -BD:/githubRepo/NativeProjects/oglTest --check-stamp-file D:/githubRepo/NativeProjects/oglTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCCompilerABI.c;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeSystem.cmake.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\FindOpenGL.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Users\SIMO1801\Desktop\GL\cmake-3.19.4-win64-x64\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;C:\Users\SIMO1801\Desktop\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeCCompiler.cmake;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;D:\githubRepo\NativeProjects\oglTest\CMakeFiles\3.19.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\githubRepo\NativeProjects\oglTest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\SIMO1801\Desktop\ogl-master\tutorial09_vbo_indexing\tutorial09.cpp" />
+    <ClCompile Include="C:\Users\SIMO1801\Desktop\ogl-master\common\shader.cpp" />
+    <ClInclude Include="C:\Users\SIMO1801\Desktop\ogl-master\common\shader.hpp" />
+    <ClCompile Include="C:\Users\SIMO1801\Desktop\ogl-master\common\controls.cpp" />
+    <ClInclude Include="C:\Users\SIMO1801\Desktop\ogl-master\common\controls.hpp" />
+    <ClCompile Include="C:\Users\SIMO1801\Desktop\ogl-master\common\texture.cpp" />
+    <ClInclude Include="C:\Users\SIMO1801\Desktop\ogl-master\common\texture.hpp" />
+    <ClCompile Include="C:\Users\SIMO1801\Desktop\ogl-master\common\objloader.cpp" />
+    <ClInclude Include="C:\Users\SIMO1801\Desktop\ogl-master\common\objloader.hpp" />
+    <ClCompile Include="C:\Users\SIMO1801\Desktop\ogl-master\common\vboindexer.cpp" />
+    <ClInclude Include="C:\Users\SIMO1801\Desktop\ogl-master\common\vboindexer.hpp" />
+    <None Include="C:\Users\SIMO1801\Desktop\ogl-master\tutorial09_vbo_indexing\StandardShading.vertexshader">
+    </None>
+    <None Include="C:\Users\SIMO1801\Desktop\ogl-master\tutorial09_vbo_indexing\StandardShading.fragmentshader">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\githubRepo\NativeProjects\oglTest\ZERO_CHECK.vcxproj">
+      <Project>{30C9E8E4-4E44-3CBA-B7BA-B3EB6083468B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\githubRepo\NativeProjects\oglTest\external\GLEW_1130.vcxproj">
+      <Project>{25BFC13B-D2CB-3F2E-8C94-960099099734}</Project>
+      <Name>GLEW_1130</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\githubRepo\NativeProjects\oglTest\external\glfw-3.1.2\src\glfw.vcxproj">
+      <Project>{E5EAF601-6F1B-3357-996B-B920FE43243A}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\githubRepo\NativeProjects\oglTest\CMakeFiles\145b747eb6b276cc807a5f76ed0bc4f0\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4B64EF9F-43EC-3849-8B13-601C7DE22F03}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

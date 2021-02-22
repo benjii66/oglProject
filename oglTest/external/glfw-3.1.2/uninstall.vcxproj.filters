@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\githubRepo\NativeProjects\oglTest\CMakeFiles\5234d5fedeae609151579f8fb38c66bf\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\SIMO1801\Desktop\ogl-master\external\glfw-3.1.2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\githubRepo\NativeProjects\oglTest\external\glfw-3.1.2\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4B64EF9F-43EC-3849-8B13-601C7DE22F03}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

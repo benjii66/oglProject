@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Users/SIMO1801/Desktop/GL/cmake-3.19.4-win64-x64/share/cmake-3.19/Modules/CheckFunctionExists.cmake
+C:/Users/SIMO1801/Desktop/GL/cmake-3.19.4-win64-x64/share/cmake-3.19/Modules/CheckIncludeFile.cmake
+C:/Users/SIMO1801/Desktop/GL/cmake-3.19.4-win64-x64/share/cmake-3.19/Modules/CheckIncludeFileCXX.cmake
+C:/Users/SIMO1801/Desktop/GL/cmake-3.19.4-win64-x64/share/cmake-3.19/Modules/CheckTypeSize.cmake
+C:/Users/SIMO1801/Desktop/ogl-master/external/CMakeLists.txt
